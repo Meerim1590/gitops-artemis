@@ -1,0 +1,13 @@
+replicaCount: 3
+
+
+image:
+  repository: "us-central1-docker.pkg.dev/capable-alcove-418117/artemis"
+  pullPolicy: IfNotPresent
+  # Overrides the image tag whose default is the chart appVersion.
+  tag: "2.0.0"
+
+
+service:
+ type: ClusterIP
+ port: 5000
